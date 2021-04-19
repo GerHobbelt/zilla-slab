@@ -4,9 +4,9 @@
   <outline>
     <contour>
       <point x="-10" y="-213" type="line"/>
-      <point x="321" y="-213" type="line"/>
-      <point x="312" y="-212"/>
-      <point x="304" y="-211"/>
+      <point x="319" y="-213" type="line"/>
+      <point x="311" y="-212"/>
+      <point x="303" y="-211"/>
       <point x="294" y="-211" type="curve"/>
       <point x="290" y="-126" type="line"/>
       <point x="345" y="-126"/>
@@ -51,10 +51,4 @@
       <point x="-10" y="917" type="line"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.lastChange</key>
-      <string>2017-05-12 10:32:23 +0000</string>
-    </dict>
-  </lib>
 </glyph>

@@ -174,10 +174,4 @@
       <point x="548" y="112" type="curve"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.lastChange</key>
-      <string>2017-05-12 10:32:23 +0000</string>
-    </dict>
-  </lib>
 </glyph>

@@ -4,16 +4,16 @@
 @numerators = [ zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr  ];
 
 
-@ZERO = [ zero zero.zero zero.tnum_lnum zero.tnum_onum zero.pnum_lnum zeroinferior zerosuperior zero.numr zero.tnum_lnum_zero zero.tnum_onum_zero zero.pnum_lnum_zero zero.smcp zero.smcp_zero ];
-@ONE = [ one  one.tnum_lnum one.tnum_onum one.pnum_lnum oneinferior onesuperior one.numr one.smcp];
-@TWO = [ two  two.tnum_lnum two.tnum_onum two.pnum_lnum twoinferior twosuperior two.numr two.smcp];
-@THREE = [ three  three.tnum_lnum three.tnum_onum three.pnum_lnum threeinferior threesuperior three.numr three.smcp ];
-@FOUR = [ four  four.tnum_lnum four.tnum_onum four.pnum_lnum fourinferior foursuperior four.numr four.smcp];
-@FIVE = [ five  five.tnum_lnum five.tnum_onum five.pnum_lnum fiveinferior fivesuperior five.numr five.smcp];
-@SIX = [ six  six.tnum_lnum six.tnum_onum six.pnum_lnum sixinferior sixsuperior six.numr six.smcp];
-@SEVEN = [ seven  seven.tnum_lnum seven.tnum_onum seven.pnum_lnum seveninferior sevensuperior seven.numr seven.smcp];
-@EIGHT = [ eight  eight.tnum_lnum eight.tnum_onum eight.pnum_lnum eightinferior eightsuperior eight.numr  eight.smcp];
-@NINE = [ nine  nine.tnum_lnum nine.tnum_onum nine.pnum_lnum nineinferior ninesuperior nine.numr nine.smcp];
+@ZERO = [ zero zero.zero zero.tnum_lnum zero.tnum_onum zero.pnum_onum zeroinferior zerosuperior zero.numr zero.tnum_lnum_zero zero.tnum_onum_zero zero.pnum_onum_zero zero.smcp zero.smcp_zero ];
+@ONE = [ one  one.tnum_lnum one.tnum_onum one.pnum_onum oneinferior onesuperior one.numr one.smcp];
+@TWO = [ two  two.tnum_lnum two.tnum_onum two.pnum_onum twoinferior twosuperior two.numr two.smcp];
+@THREE = [ three  three.tnum_lnum three.tnum_onum three.pnum_onum threeinferior threesuperior three.numr three.smcp ];
+@FOUR = [ four  four.tnum_lnum four.tnum_onum four.pnum_onum fourinferior foursuperior four.numr four.smcp];
+@FIVE = [ five  five.tnum_lnum five.tnum_onum five.pnum_onum fiveinferior fivesuperior five.numr five.smcp];
+@SIX = [ six  six.tnum_lnum six.tnum_onum six.pnum_onum sixinferior sixsuperior six.numr six.smcp];
+@SEVEN = [ seven  seven.tnum_lnum seven.tnum_onum seven.pnum_onum seveninferior sevensuperior seven.numr seven.smcp];
+@EIGHT = [ eight  eight.tnum_lnum eight.tnum_onum eight.pnum_onum eightinferior eightsuperior eight.numr  eight.smcp];
+@NINE = [ nine  nine.tnum_lnum nine.tnum_onum nine.pnum_onum nineinferior ninesuperior nine.numr nine.smcp];
 
 @FIGURES = [ @ZERO @ONE @TWO @THREE @FOUR @FIVE @SIX @SEVEN @EIGHT @NINE ];
 
@@ -34,17 +34,17 @@
 @OTHER_HAVING_SUPERIOR = [ period comma parenleft parenright dollar cent plus ];
 @OTHER_HAVING_INFERIOR = [ period comma parenleft parenright dollar cent plus ];
 
-@ALL_CURRENCY = [  Euro mill lira colonsign cruzeiro dong franc naira pesetas rupee sheqel won uni20AD uni20AE uni20B1 sterling dollar florin cent yen ];
+@ALL_CURRENCY = [  Euro mill lira colonsign cruzeiro dong franc naira pesetas rupee sheqel won uni20AD uni20AE uni20B1 sterling dollar florin cent yen uni20BF ];
 
 @CURRENCY_DEFAULT =[numbersign percent perthousand uni2116 copyright uni2117 uni267E uni24CA Euro dollar cent sterling florin yen uni20B9];
-@CURRENCY_PNUM_LNUM =[numbersign.pnum_lnum percent.pnum_lnum perthousand.pnum_lnum uni2116.pnum_lnum copyright.pnum_lnum uni2117.pnum_lnum uni267E.pnum_lnum uni24CA.pnum_lnum Euro.pnum_lnum dollar.pnum_lnum cent.pnum_lnum sterling.pnum_lnum florin.pnum_lnum yen.pnum_lnum uni20B9.pnum_lnum];
+@CURRENCY_PNUM_ONUM =[numbersign.pnum_onum percent.pnum_onum perthousand.pnum_onum uni2116.pnum_onum copyright.pnum_onum uni2117.pnum_onum uni267E.pnum_onum uni24CA.pnum_onum Euro.pnum_onum dollar.pnum_onum cent.pnum_onum sterling.pnum_onum florin.pnum_onum yen.pnum_onum uni20B9.pnum_onum];
 
 @PUNCT_DEFAULT = [ uni301A uni301B dblparenleft dblparenright hyphen endash emdash parenleft parenright bracketleft bracketright guilsinglleft guilsinglright guillemotleft guillemotright braceleft braceright exclamdown questiondown ];
 @PUNCT_CAP = [ uni301A.cap uni301B.cap dblparenleft.cap dblparenright.cap hyphen.cap endash.cap emdash.cap parenleft.cap parenright.cap bracketleft.cap bracketright.cap guilsinglleft.cap guilsinglright.cap guillemotleft.cap guillemotright.cap braceleft.cap braceright.cap exclamdown.cap questiondown.cap ];
 
 @FIG_DEFAULT = [ zero one two three four five six seven eight nine ];
 @FIG_TNUM_LNUM = [ zero.tnum_lnum one.tnum_lnum two.tnum_lnum three.tnum_lnum four.tnum_lnum five.tnum_lnum six.tnum_lnum seven.tnum_lnum eight.tnum_lnum nine.tnum_lnum ];
-@FIG_PNUM_LNUM = [ zero.pnum_lnum one.pnum_lnum two.pnum_lnum three.pnum_lnum four.pnum_lnum five.pnum_lnum six.pnum_lnum seven.pnum_lnum eight.pnum_lnum nine.pnum_lnum ];
+@FIG_PNUM_ONUM = [ zero.pnum_onum one.pnum_onum two.pnum_onum three.pnum_onum four.pnum_onum five.pnum_onum six.pnum_onum seven.pnum_onum eight.pnum_onum nine.pnum_onum ];
 @FIG_TNUM_ONUM = [ zero.tnum_onum one.tnum_onum two.tnum_onum three.tnum_onum four.tnum_onum five.tnum_onum six.tnum_onum seven.tnum_onum eight.tnum_onum nine.tnum_onum ];
 
 @PUNCT_HAVING_SUPERIOR = [ plus minus equal multiply divide dollar comma period parenleft parenright cent ];
@@ -81,18 +81,6 @@ languagesystem latn TRK;
 
 #----------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
 feature aalt {
     feature case;
     feature c2sc;
@@ -110,18 +98,14 @@ feature aalt {
 	feature numr;
 	feature dnom;
 	feature zero;
+	feature ss01;
     sub hyphen from [ endash emdash minus ];
     sub period from [ ellipsis ];
 } aalt;
 
-
-
-
-
 #---------------------------------------
 # Localized Forms
 #---------------------------------------
-
 feature locl { # Localized Forms
 	script latn;
 		language MOL  exclude_dflt; # Moldavian
@@ -136,9 +120,6 @@ feature locl { # Localized Forms
 			sub i by i.TRK;
 } locl;
 
-
-
-
 #---------------------------------------
 # Fractions
 #---------------------------------------
@@ -146,7 +127,6 @@ feature locl { # Localized Forms
 # Tal Leming FRAC code
 # 1 OCR 2009
 # http://talleming.com/2009/10/01/fraction-fever-2/
-
 feature frac {
    lookup FractionBar {
         ignore sub slash @figures @figures @figures @figures @figures @figures @figures @figures @figures @figures slash';
@@ -222,6 +202,17 @@ feature frac {
 
 
 
+#---------------------------------------
+# Small Capitals From Capitals
+#---------------------------------------
+
+feature c2sc {
+	sub @CAPITALS_HAVING_SC by @CAPITALS_SC;
+	sub @SC_HAVING_EXTRAS by @SC_EXTRAS;
+	sub @FIG_HAVING_SMCP by @FIG_SMCP;
+	#capital eszett
+	sub uni1E9E by uni1E9E.c2sc;		
+} c2sc;
 
 
 #---------------------------------------
@@ -230,63 +221,24 @@ feature frac {
 
 feature smcp {
 
-	script latn;
-		language dflt;
-			lookup SMCP_ALL {
-				sub @LOWER_HAVING_SC by @LOWER_SC;
-				sub dotlessi by i.smcp;
-				sub @FIG_TNUM_LNUM by @FIG_TNUM_ONUM;
-				sub @FIG_PNUM_LNUM by @FIG_DEFAULT;
-				sub @CURRENCY_PNUM_LNUM by @CURRENCY_DEFAULT;
-				sub zero.pnum_lnum_zero by zero.zero;
-				sub zero.tnum_lnum_zero by zero.tnum_lnum;
+		lookup SMCP_ALL {
+			sub @LOWER_HAVING_SC by @LOWER_SC;
+			sub dotlessi by i.smcp;
+			sub @FIG_TNUM_LNUM by @FIG_TNUM_ONUM;
+			sub @FIG_DEFAULT by @FIG_PNUM_ONUM;
+			sub @CURRENCY_DEFAULT by @CURRENCY_PNUM_ONUM;
+			sub zero.zero by zero.pnum_onum_zero;
+			sub zero.tnum_onum_zero by zero.tnum_lnum;
 			} SMCP_ALL;
 			lookup SMCP_ITRK {
-				sub i.TRK by idotaccent.smcp;
+				sub i.TRK by idotaccent.smcp; 
+				
 			} SMCP_ITRK;
-
-		language DEU include_dflt;
-		language MOL include_dflt;
-		language ROM include_dflt;
-		language AZE include_dflt;
-		language CRT include_dflt;
-		language TRK include_dflt;
-	
 } smcp;
 
 
 
-
 #---------------------------------------
-# Small Capitals From Capitals
-#---------------------------------------
-
-feature c2sc {
-	script latn;
-		language dflt;
-			lookup C2SC_ALL {
-				sub @CAPITALS_HAVING_SC by @CAPITALS_SC;
-				sub @SC_HAVING_EXTRAS by @SC_EXTRAS;
-				sub @FIG_HAVING_SMCP by @FIG_SMCP;
-			} C2SC_ALL;
-
-		language DEU include_dflt;
-		language MOL include_dflt;
-		language ROM include_dflt;
-		language AZE include_dflt;
-		language CRT include_dflt;
-		language TRK include_dflt;
-
-				
-} c2sc;
-
-
-
-
-#---------------------------------------
-# Discretionary Ligatures
-#---------------------------------------
-
 feature ordn {
     sub @FIGURES a' by ordfeminine;
     sub @FIGURES o' by ordmasculine;
@@ -310,13 +262,12 @@ feature ordn {
 #---------------------------------------
 # Oldstyle Figures
 #---------------------------------------
-
 feature onum {
-    sub @FIG_PNUM_LNUM by @FIG_DEFAULT;
+	sub @FIG_DEFAULT by @FIG_PNUM_ONUM;
+	sub @CURRENCY_DEFAULT by @CURRENCY_PNUM_ONUM; 
 	sub @FIG_TNUM_LNUM by @FIG_TNUM_ONUM; 
-	sub @CURRENCY_PNUM_LNUM by @CURRENCY_DEFAULT;      
-    sub @PUNCT_CAP by @PUNCT_DEFAULT;  
-	sub zero.pnum_lnum_zero by zero.zero;
+    sub @PUNCT_CAP by @PUNCT_DEFAULT; 
+	sub zero.zero by zero.pnum_onum_zero;
 } onum;
 
 
@@ -326,13 +277,13 @@ feature onum {
 #---------------------------------------
 # Lining Figures
 #---------------------------------------
-
 feature lnum {
-    sub @FIG_DEFAULT by @FIG_PNUM_LNUM;    
+    
+	sub @FIG_PNUM_ONUM by @FIG_DEFAULT; 	
     sub @FIG_TNUM_ONUM by @FIG_TNUM_LNUM;    
-    sub @CURRENCY_DEFAULT by @CURRENCY_PNUM_LNUM;
+	sub @CURRENCY_PNUM_ONUM by @CURRENCY_DEFAULT;
 	sub @PUNCT_DEFAULT by @PUNCT_CAP;  
-    sub zero.pnum_lnum_zero by zero.zero;
+    sub zero.pnum_onum_zero by zero.zero;
 } lnum;
 
 	
@@ -341,10 +292,9 @@ feature lnum {
 #---------------------------------------
 # Proportional Figures
 #---------------------------------------
-
 feature pnum {
-    sub @FIG_TNUM_LNUM by @FIG_PNUM_LNUM;
-    sub @FIG_TNUM_ONUM by @FIG_DEFAULT;
+    sub @FIG_TNUM_ONUM by @FIG_PNUM_ONUM;
+    sub @FIG_TNUM_LNUM by @FIG_DEFAULT;
 } pnum;
 
 
@@ -353,19 +303,13 @@ feature pnum {
 #---------------------------------------
 # Tabular Figures
 #---------------------------------------
-
 feature tnum {
-		sub @FIG_DEFAULT by @FIG_TNUM_ONUM;
-		sub @FIG_PNUM_LNUM by @FIG_TNUM_LNUM;
+		sub @FIG_DEFAULT by @FIG_TNUM_LNUM;
+		sub @FIG_PNUM_ONUM by @FIG_TNUM_ONUM;
 } tnum;
 
 
 
-
-#---------------------------------------
-# Stylistic Set 1
-#---------------------------------------
-# double brackets
 
 feature sups {
 
@@ -379,10 +323,10 @@ feature sups {
 				sub @FIG_DEFAULT by @FIG_SUPERIOR;
 				sub @FIG_NUMR by @FIG_SUPERIOR;
 				sub @FIG_TNUM_LNUM by @FIG_SUPERIOR;
-				sub @FIG_PNUM_LNUM by @FIG_SUPERIOR;
+				sub @FIG_PNUM_ONUM by @FIG_SUPERIOR;
 				sub @FIG_TNUM_ONUM by @FIG_SUPERIOR;
 				sub @FIG_INFERIOR by @FIG_SUPERIOR;
-				sub [zero.zero zero.pnum_lnum_zero] by zerosuperior;
+				sub [zero.zero zero.pnum_onum_zero] by zerosuperior;
 				sub @LETTERS_HAVING_SUPERIOR by @LETTERS_SUPERIOR;
 				sub @PUNCT_HAVING_SUPERIOR by @PUNCT_SUPERIOR;
 				sub @PUNCT_INFERIOR by @PUNCT_SUPERIOR;
@@ -406,7 +350,6 @@ feature sups {
 #---------------------------------------
 # Scientific Inferiors
 #---------------------------------------
-
 feature sinf {
 	
 	script latn;
@@ -417,10 +360,10 @@ feature sinf {
 	
 			lookup SINF_ALL {	sub @FIG_DEFAULT by @FIG_INFERIOR;
 				sub @FIG_TNUM_LNUM by @FIG_INFERIOR;
-				sub @FIG_PNUM_LNUM by @FIG_INFERIOR;
+				sub @FIG_PNUM_ONUM by @FIG_INFERIOR;
 				sub @FIG_TNUM_ONUM by @FIG_INFERIOR;
 				sub @FIG_INFERIOR by @FIG_INFERIOR;
-				sub [zero.zero zero.pnum_lnum_zero] by zeroinferior;
+				sub [zero.zero zero.pnum_onum_zero] by zeroinferior;
 				sub @LETTERS_HAVING_INFERIOR by @LETTERS_INFERIOR;
 				sub @PUNCT_HAVING_INFERIOR by @PUNCT_INFERIOR;
 				sub @PUNCT_SUPERIOR by @PUNCT_INFERIOR;
@@ -444,14 +387,13 @@ feature sinf {
 #---------------------------------------
 # Denominators
 #---------------------------------------
-
 feature dnom {
 	sub @FIG_DEFAULT by @FIG_INFERIOR;
 	sub @FIG_TNUM_LNUM by @FIG_INFERIOR;
-	sub @FIG_PNUM_LNUM by @FIG_INFERIOR;
+	sub @FIG_PNUM_ONUM by @FIG_INFERIOR;
 	sub @FIG_TNUM_ONUM by @FIG_INFERIOR;
 	sub @FIG_SUPERIOR by @FIG_INFERIOR;
-	sub [zero.zero zero.pnum_lnum_zero] by zeroinferior;
+	sub [zero.zero zero.pnum_onum_zero] by zeroinferior;
 	sub slash by fraction;
 	sub @OTHER_HAVING_INFERIOR by @OTHER_INFERIOR;
 	sub @OTHER_SUPERIOR by @OTHER_INFERIOR;
@@ -463,14 +405,13 @@ feature dnom {
 #---------------------------------------
 # Numerators
 #---------------------------------------
-
 feature numr {
 	sub @FIG_DEFAULT by @FIG_NUMR;
 	sub @FIG_TNUM_LNUM by @FIG_NUMR;
-	sub @FIG_PNUM_LNUM by @FIG_NUMR;
+	sub @FIG_PNUM_ONUM by @FIG_NUMR;
 	sub @FIG_TNUM_ONUM by @FIG_NUMR;
 	sub @FIG_INFERIOR by @FIG_NUMR;
-	sub [zero.zero zero.pnum_lnum_zero] by zero.numr;
+	sub [zero.zero zero.pnum_onum_zero] by zero.numr;
 	sub slash by fraction;
 	sub @OTHER_HAVING_SUPERIOR by @OTHER_SUPERIOR;
 	sub @OTHER_SUPERIOR by @OTHER_SUPERIOR;
@@ -483,56 +424,54 @@ feature numr {
 #---------------------------------------
 # Standard Ligatures
 #---------------------------------------
-
 feature liga {
-    script latn;
-    	language dflt;
-    	
-        	lookup FI_LIGS {
-        		sub f f i by f_f_i;
-        		sub f i by fi;
-        	} FI_LIGS;
-        	
-        	lookup NOFI {
-        	sub f f l by f_f_l;
-        	sub f f j by f_f_j;
-        	sub f j by f_j;
-        	sub f l by fl;
-        	sub f f by f_f;
-        	sub f k by f_k;
-        	sub f h by f_h;
-        	sub f b by f_b;
-        	sub f igrave by f_igrave;
-        	sub f idieresis by f_idieresis;
-        	#sub m o z i l l a by logo;
-        	#sub M o z i l l a by logo;
-        	#sub m o z colon l l a by logo;
-        	#sub m o z colon slash slash a by logo;
-        	#sub m o z i slash slash a by logo;
-        	
-      
-        	} NOFI;
+	language dflt;
+	
+	lookup FI_LIGS {
+		sub f f i by f_f_i;
+		sub f i by fi;
+	} FI_LIGS;
+	
+	lookup NOFI {
+	sub f f l by f_f_l;
+	sub f f j by f_f_j;
+	sub f j by f_j;
+	sub f l by fl;
+	sub f f by f_f;
+	sub f k by f_k;
+	sub f h by f_h;
+	sub f b by f_b;
+	sub f igrave by f_igrave;
+	sub f idieresis by f_idieresis;
+	#sub m o z i l l a by logo;
+	#sub M o z i l l a by logo;
+	#sub m o z colon l l a by logo;
+	#sub m o z colon slash slash a by logo;
+	#sub m o z i slash slash a by logo;
+	
+  
+	} NOFI;
 
-    	language SRB include_dflt;
-    	language MOL include_dflt;
-    	language ROM include_dflt;
+	language SRB include_dflt;
+	language MOL include_dflt;
+	language ROM include_dflt;
 
-    	language DEU exclude_dflt;
+	language DEU exclude_dflt;
 
-    	language AZE exclude_dflt;
-    	lookup NOFI;
-    	language CRT exclude_dflt;
-    	lookup NOFI;
-    	language TRK exclude_dflt;
-    	lookup NOFI;
+	language AZE exclude_dflt;
+	lookup NOFI;
+	language CRT exclude_dflt;
+	lookup NOFI;
+	language TRK exclude_dflt;
+	lookup NOFI;
 
-    	script cyrl;
-    	lookup FI_LIGS;
-    	lookup NOFI;
-    	
-    	script grek;
-    	lookup FI_LIGS;
-    	lookup NOFI;
+	script cyrl;
+	lookup FI_LIGS;
+	lookup NOFI;
+	
+	script grek;
+	lookup FI_LIGS;
+	lookup NOFI;
 } liga;
 
 
@@ -542,13 +481,12 @@ feature liga {
 #---------------------------------------
 # Case-Sensitive Forms
 #---------------------------------------
-
 feature case {
-	sub @FIG_DEFAULT by @FIG_PNUM_LNUM;
+	sub @FIG_PNUM_ONUM by @FIG_DEFAULT;
+	sub @CURRENCY_PNUM_ONUM by @CURRENCY_DEFAULT;	
 	sub @FIG_TNUM_ONUM by @FIG_TNUM_LNUM;
-	sub @CURRENCY_DEFAULT by @CURRENCY_PNUM_LNUM;	
 	sub @PUNCT_DEFAULT by @PUNCT_CAP;
-	sub zero.zero by zero.pnum_lnum_zero;
+	sub zero.pnum_onum_zero by zero.zero;
 	} case;
 
 
@@ -557,7 +495,6 @@ feature case {
 #---------------------------------------
 # Ornaments
 #---------------------------------------
-
 feature ornm {
 	sub bullet from @ORNAMENTS;
 } ornm;
@@ -568,12 +505,11 @@ feature ornm {
 #---------------------------------------
 # Slashed Zero
 #---------------------------------------
-
 feature zero {
 	language dflt;
 	lookup zero_dflt {
 		sub zero by zero.zero;
-		sub zero.pnum_lnum by zero.pnum_lnum_zero;
+		sub zero.pnum_onum by zero.pnum_onum_zero;
 		sub zero.tnum_lnum by zero.tnum_lnum_zero;
 		sub zero.tnum_onum by zero.tnum_onum_zero;
 		sub zero.smcp by zero.smcp_zero;
@@ -590,16 +526,20 @@ feature zero {
 #---------------------------------------
 # Currency (discontinued)
 #---------------------------------------
-
 feature crcy {
 	sub currency from @ALL_CURRENCY;
 } crcy;
 
-
-
-
 #---------------------------------------
-# Stylistic Set 3
+# SS 01 alt capital eszett
 #---------------------------------------
-# Serbian
 
+feature ss01{
+
+	featureNames {
+		name "Small Caps Eszett cap"; # Windows English
+		name 1 0 0 "Small Caps Eszett cap"; # Mac English
+	};
+
+ sub germandbls.smcp by uni1E9E.c2sc;
+} ss01;	
